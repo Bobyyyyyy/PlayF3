@@ -1,0 +1,13 @@
+services:
+  web:
+    ports:
+      - "80:5080"
+      - "443:5043"
+    build:
+      context: .
+      dockerfile: Dockerfile
+  redis:
+    image: "docker.io/library/production_prepare_image"
+    expose:
+      - "5080"
+      - "5043"

@@ -1,0 +1,11 @@
+services:
+  web:
+    ports:
+      - "5080:5080"
+    build:
+      context: .
+      dockerfile: Dockerfile
+  redis:
+    image: "express_image_ingsw"
+    expose:
+      - "5080"

@@ -1,0 +1,13 @@
+    26	Daniele Romanella <www.daniele.romanella@gmail.com>
+    26	mattyk0207 <mattia.lodi@gmail.com>
+    21	Mattia Lodi <mattia.lodi3@studio.unibo.it>
+    16	romanellas <www.daniele.romanella@gmail.com>
+     8	Francesco Testa <francesco.testa3@studio.unibo.it>
+     5	AleBombi <118299985+AleBombi@users.noreply.github.com>
+     5	Tiestaa <francesco.testa3@studio.unibo.it>
+     3	SaveSus <govonisaverio@gmail.com>
+     2	Alessandro <alex.tomaiuolo22@gmail.com>
+     2	Daniele Romanella <daniele.romanella@studio.unibo.it>
+     1	Alessandro Ravveduto <alessandro.ravveduto@studio.unibo.it>
+co-authored commits:116
+Co-author list:

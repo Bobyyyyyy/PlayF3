@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "test": "jest --config=test/jest.config.js --coverage -i --forceExit"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.23.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@babel/preset-react": "^7.23.3",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-sonar-reporter": "^2.0.0",
+    "react-test-renderer": "^18.2.0",
+    "supertest": "^6.3.3",
+    "supertest-session": "^5.0.1"
+  },
+  "jestSonar": {
+    "reportPath": "./test",
+    "reportFile": "test-report.xml"
+  },
+  "dependencies": {
+    "jest-environment-jsdom": "^29.7.0",
+    "node-cron": "^3.0.3",
+    "react": "^18.2.0"
+  }
+}

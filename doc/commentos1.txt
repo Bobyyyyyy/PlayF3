@@ -1,0 +1,14 @@
+Retrospettiva mi sembra svolta bene, cade un po' nel finale. Nel senso che avendo identificato 
+i punti deboli dovevate 
+1) metterli in priorità
+2) Per ogni punto, indicare azioni in grado di MIGLIORARE il problema
+3) indicare chi/come controllare che questi punti vengano svolti
+
+Mancano però il resto...video, DOR/DOD, backlog ecc. Caricatele per favore. 
+
+Vedo che è sempre una sola persona che aggiorna taiga. Come avviene questo? Non avrebbe 
+senso che è il proprietario della US che aggiorna le cose? 
+Le epiche sono MOLTO MOLTO tecniche, davvero strano; anche qualche US ha questo aspetto.
+
+
+

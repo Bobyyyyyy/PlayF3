@@ -1,0 +1,21 @@
+/user
+    /                       GET
+    /login                  POST        body: username, password
+    /register               POST        body: username, password
+    /logout                 POST
+
+/game
+    /startPVPMatch          ?           body: difficulty 
+    /startPVEMatch          ?           body: difficulty 
+    /startTrainingMatch     ?           body: difficulty 
+    /move                   POST        body: move
+    /resign
+    /drawRequest
+
+/score
+    /board                  GET
+
+
+-- serve solo se decidiamo di fare le richieste anche per il computer dal frontend
+/engine
+    /move

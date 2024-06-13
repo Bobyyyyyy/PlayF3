@@ -1,0 +1,321 @@
+swagger: "2.0"
+info:
+  description: "Play F3 API. Useful for developers to integrate the front-end pages and other systems!"
+  version: "0.1.0"
+  title: "PlayF3 API"
+host: "localhost:8000"
+basePath: "/api/"
+schemes:
+  - "http"
+paths:
+  /match:
+    post:
+      summary: Create new training match.
+      description: Create new match and returns the id for the match. The match is between the user and StockFish chess engine.
+      tags:
+        - Match
+      parameters:
+        - name: imbalance
+          in: query
+          required: true
+          type: number
+        - name: white
+          required: true
+          type: boolean
+          in: query
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /match/singleplayer:
+    post:
+      summary: Create new single player match.
+      description: Create new single player match with imbalance (returned by this request), and timer.
+      tags:
+        - Match
+      parameters:
+        - name: imbalance
+          in: query
+          required: true
+          type: number
+        - name: white
+          required: true
+          type: boolean
+          in: query
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /match/{id}:
+    get:
+      summary: Get match info.
+      description: Get all match informations.
+      tags:
+        - Match
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /match/daily/config:
+    get:
+      summary: Get daily match config.
+      tags:
+        - Match
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /match/weekly/config:
+    get:
+      summary: Get weekly config.
+      description: get the situation of the current week
+      tags:
+        - Match
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /match/daily:
+    post:
+      summary: Create new daily match.
+      description: Create new daily match and informs the server that a new game is starting. Uses timer.
+      tags:
+        - Match
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /match/weekly:
+    post:
+      summary: Create new weekly match.
+      description: Create new weekly match and informs the server that a new game is starting. Uses timer.
+      tags:
+        - Match
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /match/daily/leaderboard/{day}:
+    get:
+      summary: Get leaderboard of a daily situation.
+      description: Get leaderboard of a daily situation.
+      tags:
+        - Match
+      parameters:
+          - name: day
+            in: query
+            description: YYYY-MM-DD format
+            required: true
+            type: string
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /match/weekly/leaderboard/{day}:
+    get:
+      summary: Get leaderboard of a weekly situation.
+      description: Get leaderboard of a weekly situation.
+      tags:
+        - Match
+      parameters:
+        - name: day
+          in: query
+          description: YYYY-MM-DD format
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /match/ranked/leaderboard:
+    get:
+      summary: Get leaderboard of the users that played ranked
+      description: Get leaderboard of the users that played ranked
+      tags:
+        - Match
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /match/multiplayer:
+    post:
+      summary: Create new multiplayer player match.
+      description: Create new multi player match.
+      tags:
+        - Match
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /match/multiplayer/random:
+    get:
+      summary: Get random match shadow to enter in game.
+      tags:
+        - Match
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /match/startingPosition/{diff}:
+    get:
+      summary: Returns starting position by diff
+      parameters:
+        - name: diff
+          type: number
+          required: true
+          in: path
+      tags:
+        - Match
+      responses:
+        '200':
+          description: Ok
+  /match/pausedGame/{type}:
+    get:
+      summary: Check if there is a paused game of the given type, user is taken by the session ID
+      parameters:
+        - name: type
+          type: string
+          description: enum [SINGLEPLAYER,DAILY,WEEKLY]
+          required: true
+          in: path
+      tags:
+        - Match
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /user:
+    post:
+      summary: Create new user.
+      description: Create new user and returns the user id.
+      tags:
+        - User
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /user/{id}:
+    get:
+      summary: Get user info.
+      description: Get all user informations.
+      tags:
+        - User
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /user/login:
+    post:
+      summary: Authenticate with credentials
+      description: Authentication creating session.
+      tags:
+        - User
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /user/logout:
+    post:
+      summary: Logout deleting sessions.
+      description: Logout and delete session.
+      tags:
+        - User
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /user/authenticatedUser:
+    get:
+      summary: Returns the username of the authenticated user, empty string otherwise
+      tags:
+        - User
+      responses:
+        '200':
+          description: Ok
+  /user/ranked/rank:
+    get:
+      summary: Returns rank of the user currently in session
+      tags:
+        - User
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /user/{id}/attempts:
+    get:
+      summary: Returns remaining attempts of the challenges
+      tags:
+        - User
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error
+  /user/{id}/results:
+    get:
+      summary: Returns best result in challenges
+      tags:
+        - User
+      responses:
+        '200':
+          description: Ok
+        '400':
+          description: Bad request
+        '500':
+          description: Internal server error

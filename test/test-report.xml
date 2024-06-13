@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/alessandro/Desktop/progetti/progetto_ingegneria/t6-playf3/test/backend/controllers/MatchController.test.js">
+    <testCase name="Match Controller Test insert match Training Match play white" duration="482"/>
+    <testCase name="Match Controller Test insert match Training Match play black" duration="815"/>
+    <testCase name="Match Controller Test insert match Training Match imbalance nan" duration="2"/>
+    <testCase name="Match Controller Test insert match Multiplayer Match valid user" duration="451"/>
+    <testCase name="Match Controller Test insert match Multiplayer Match invalid user" duration="350"/>
+    <testCase name="Match Controller Test insert match Singleplayer Match play white" duration="843"/>
+    <testCase name="Match Controller Test insert match Singleplayer Match play black" duration="735"/>
+    <testCase name="Match Controller Test insert match Singleplayer Match Imbalance Nan" duration="2"/>
+    <testCase name="Match Controller Test insert match Singleplayer Match playwhite not defined" duration="1"/>
+    <testCase name="Match Controller Test insert match daily match" duration="473"/>
+    <testCase name="Match Controller Test insert match weekly match" duration="442"/>
+    <testCase name="Match Controller Test insert match generic match valid type" duration="478"/>
+    <testCase name="Match Controller Test insert match generic match invalid type" duration="0"/>
+    <testCase name="Match Controller Test daily Match create attempt not existing user" duration="193"/>
+    <testCase name="Match Controller Test daily Match create attempt existing user" duration="1364"/>
+    <testCase name="Match Controller Test daily Match Daily Result valid match id - valid day" duration="763"/>
+    <testCase name="Match Controller Test daily Match Daily Result invalid match id - valid day" duration="62"/>
+    <testCase name="Match Controller Test daily Match Daily Result valid match id - invalid day" duration="173"/>
+    <testCase name="Match Controller Test daily Match Daily Result invalid match id - invalid day" duration="53"/>
+    <testCase name="Match Controller Test daily Match Daily Result too many attempts" duration="2579"/>
+    <testCase name="Match Controller Test daily Match Daily Result leaderboard get valid day" duration="248"/>
+    <testCase name="Match Controller Test daily Match Daily Result leaderboard get invalid day" duration="476"/>
+    <testCase name="Match Controller Test daily Match Daily Result leaderboard get daily match " duration="68"/>
+    <testCase name="Match Controller Test weekly match attempt not existing user" duration="154"/>
+    <testCase name="Match Controller Test weekly match attempt existing user" duration="1096"/>
+    <testCase name="Match Controller Test weekly match weekly Result valid match id - valid day" duration="709"/>
+    <testCase name="Match Controller Test weekly match weekly Result invalid match id - valid day" duration="94"/>
+    <testCase name="Match Controller Test weekly match weekly Result valid match id - invalid day" duration="102"/>
+    <testCase name="Match Controller Test weekly match weekly Result invalid match id - invalid day" duration="56"/>
+    <testCase name="Match Controller Test weekly match weekly Result too many attempts" duration="9481"/>
+    <testCase name="Match Controller Test weekly match weekly Result leaderboard get valid day" duration="414"/>
+    <testCase name="Match Controller Test weekly match weekly Result leaderboard get invalid day - syntax" duration="1"/>
+    <testCase name="Match Controller Test weekly match weekly Result leaderboard get daily match " duration="84"/>
+    <testCase name="Match Controller Test weekly match weekly Result leaderboard get daily match - not inserted Before " duration="380"/>
+    <testCase name="Match Controller Test update match status  use valid ID matchID - match not started" duration="158"/>
+    <testCase name="Match Controller Test update match status  use valid ID matchID - match is playing" duration="307"/>
+    <testCase name="Match Controller Test update match status  use valid ID matchID - match ended" duration="304"/>
+    <testCase name="Match Controller Test update match status  use valid ID matchID - match ended from pause" duration="1085"/>
+    <testCase name="Match Controller Test update match status  use ad invalid ID invalidID - match not started" duration="58"/>
+    <testCase name="Match Controller Test update match status  use ad invalid ID invalidID - match is playing" duration="76"/>
+    <testCase name="Match Controller Test update match status  use ad invalid ID invalidID - match ended" duration="69"/>
+    <testCase name="Match Controller Test update match status  use string as ID stringID - match not started" duration="2"/>
+    <testCase name="Match Controller Test update match status  use string as ID stringID - match is playing" duration="1"/>
+    <testCase name="Match Controller Test update match status  use string as ID stringID - match ended" duration="0"/>
+    <testCase name="Match Controller Test update match status  invalid status matchID - invalid status" duration="0"/>
+    <testCase name="Match Controller Test update match status  invalid status invalidID - invalid status" duration="1"/>
+    <testCase name="Match Controller Test update match status  invalid status stringID - invalid status" duration="1"/>
+    <testCase name="Match Controller Test check Match ID test valid ID" duration="107"/>
+    <testCase name="Match Controller Test check Match ID test invalid ID" duration="57"/>
+    <testCase name="Match Controller Test add move in DB invalid ID" duration="61"/>
+    <testCase name="Match Controller Test add move in DB valid ID" duration="420"/>
+    <testCase name="Match Controller Test get Single Match invalid ID" duration="56"/>
+    <testCase name="Match Controller Test get Single Match valid ID" duration="127"/>
+    <testCase name="Match Controller Test return fen diff invalid" duration="23"/>
+    <testCase name="Match Controller Test return fen diff != 0 " duration="15"/>
+    <testCase name="Match Controller Test update Won status Single no user associated" duration="935"/>
+    <testCase name="Match Controller Test update Won status Single white won - user valid" duration="1619"/>
+    <testCase name="Match Controller Test update Won status Single black won - user valid" duration="650"/>
+    <testCase name="Match Controller Test update Won status Single invalid match id" duration="160"/>
+    <testCase name="Match Controller Test update Won status multi - elo update valid inputs - white won" duration="1370"/>
+    <testCase name="Match Controller Test update Won status multi - elo update valid inputs - draw" duration="1327"/>
+    <testCase name="Match Controller Test update Won status multi - elo update invalid input - no white" duration="236"/>
+    <testCase name="Match Controller Test update Won status multi - elo update invalid input - no black" duration="729"/>
+    <testCase name="Match Controller Test update Won status match not ended" duration="2"/>
+    <testCase name="Match Controller Test get random position" duration="24"/>
+    <testCase name="Match Controller Test check paused game  match not found" duration="891"/>
+    <testCase name="Match Controller Test check paused game  wrong matchtype" duration="1"/>
+    <testCase name="Match Controller Test check paused game  invalid user" duration="102"/>
+    <testCase name="Match Controller Test check paused game  valid input daily" duration="170"/>
+    <testCase name="Match Controller Test check paused game  valid input weekly" duration="139"/>
+    <testCase name="Match Controller Test check paused game  valid input single" duration="135"/>
+    <testCase name="Match Controller Test ranked leaderboard" duration="61"/>
+    <testCase name="Match Controller Test get user info attempts - weekly&amp;daily valid user id" duration="565"/>
+    <testCase name="Match Controller Test get user info attempts - weekly&amp;daily invalid user id" duration="191"/>
+    <testCase name="Match Controller Test get user info results - weekly&amp;daily valid user id" duration="226"/>
+    <testCase name="Match Controller Test get user info results - weekly&amp;daily invalid user id" duration="85"/>
+    <testCase name="Match Controller Test get user info rank invalid user ID" duration="51"/>
+    <testCase name="Match Controller Test get user info rank valid user ID" duration="165"/>
+    <testCase name="Match Controller Test multiplayer no match_shadow " duration="64"/>
+    <testCase name="Match Controller Test multiplayer get random match multi - connect - delete" duration="1295"/>
+  </file>
+  <file path="/Users/alessandro/Desktop/progetti/progetto_ingegneria/t6-playf3/test/backend/models/MatchModel.test.js">
+    <testCase name="testing Match Model SQL insert Match in DB insert Match SinglePlayer" duration="626"/>
+    <testCase name="testing Match Model SQL insert Match in DB insert Match Multiplayer" duration="713"/>
+    <testCase name="testing Match Model SQL insert Match in DB insert match with wrong matchType" duration="2"/>
+    <testCase name="testing Match Model SQL check Match ID in DB valid ID" duration="56"/>
+    <testCase name="testing Match Model SQL check Match ID in DB invalid ID" duration="54"/>
+    <testCase name="testing Match Model SQL  modify status game in DB status Match not started test" duration="60"/>
+    <testCase name="testing Match Model SQL  modify status game in DB status Match is playing test" duration="302"/>
+    <testCase name="testing Match Model SQL  modify status game in DB status Match is ended test" duration="111"/>
+    <testCase name="testing Match Model SQL  modify status game in DB invalid type match id" duration="65"/>
+    <testCase name="testing Match Model SQL get status game valid id" duration="60"/>
+    <testCase name="testing Match Model SQL get status game invalid id" duration="76"/>
+    <testCase name="testing Match Model SQL match moves register moves  valid match" duration="576"/>
+    <testCase name="testing Match Model SQL match moves register moves  invalid match" duration="79"/>
+    <testCase name="testing Match Model SQL match moves register moves  invalid type match id" duration="105"/>
+    <testCase name="testing Match Model SQL match moves get moves valid id" duration="73"/>
+    <testCase name="testing Match Model SQL match moves get moves invalid id" duration="68"/>
+    <testCase name="testing Match Model SQL mark win to white valid id" duration="131"/>
+    <testCase name="testing Match Model SQL mark win to white invalid id" duration="49"/>
+    <testCase name="testing Match Model SQL mark win to white invalid type id" duration="83"/>
+    <testCase name="testing Match Model SQL mark black to white valid id" duration="270"/>
+    <testCase name="testing Match Model SQL mark black to white invalid id" duration="58"/>
+    <testCase name="testing Match Model SQL mark black to white invalid type id" duration="60"/>
+    <testCase name="testing Match Model SQL mark draw valid id" duration="197"/>
+    <testCase name="testing Match Model SQL mark draw invalid id" duration="69"/>
+    <testCase name="testing Match Model SQL mark draw invalid type id" duration="83"/>
+    <testCase name="testing Match Model SQL daily match insert situation save - valid day" duration="202"/>
+    <testCase name="testing Match Model SQL daily match insert situation save - invalid day" duration="63"/>
+    <testCase name="testing Match Model SQL daily match check valid Day" duration="305"/>
+    <testCase name="testing Match Model SQL daily match check invalid Day" duration="54"/>
+    <testCase name="testing Match Model SQL daily match leaderboard get - valid Day" duration="86"/>
+    <testCase name="testing Match Model SQL daily match leaderboard get - invalid Day" duration="86"/>
+    <testCase name="testing Match Model SQL daily match get daily Attempts valid user id - valid day" duration="87"/>
+    <testCase name="testing Match Model SQL daily match get daily Attempts valid user id - invalid day" duration="80"/>
+    <testCase name="testing Match Model SQL daily match paused daily game get - valid user" duration="107"/>
+    <testCase name="testing Match Model SQL daily match paused daily game get - invalid user" duration="62"/>
+    <testCase name="testing Match Model SQL daily match get user daily results valid inputs" duration="84"/>
+    <testCase name="testing Match Model SQL daily match get user daily results invalid user" duration="77"/>
+    <testCase name="testing Match Model SQL daily match get user daily results invalid day" duration="78"/>
+    <testCase name="testing Match Model SQL weekly match insert situation save - valid day" duration="182"/>
+    <testCase name="testing Match Model SQL weekly match insert situation save - invalid day" duration="60"/>
+    <testCase name="testing Match Model SQL weekly match check valid Day" duration="57"/>
+    <testCase name="testing Match Model SQL weekly match check invalid Day" duration="58"/>
+    <testCase name="testing Match Model SQL weekly match leaderboard get - valid Day" duration="66"/>
+    <testCase name="testing Match Model SQL weekly match leaderboard get - invalid Day" duration="54"/>
+    <testCase name="testing Match Model SQL weekly match get Weekly Attempts valid user id - valid day" duration="58"/>
+    <testCase name="testing Match Model SQL weekly match get Weekly Attempts valid user id - invalid day" duration="81"/>
+    <testCase name="testing Match Model SQL weekly match paused weekly game get - valid user" duration="83"/>
+    <testCase name="testing Match Model SQL weekly match paused weekly game get - invalid user" duration="59"/>
+    <testCase name="testing Match Model SQL connect player match connect white" duration="282"/>
+    <testCase name="testing Match Model SQL connect player match connect black" duration="202"/>
+    <testCase name="testing Match Model SQL connect player match invalid match id type" duration="64"/>
+    <testCase name="testing Match Model SQL connect player match get player in match black playing" duration="78"/>
+    <testCase name="testing Match Model SQL connect player match get player in match invalid match id" duration="58"/>
+    <testCase name="testing Match Model SQL connect player match get single paused game valid user id" duration="60"/>
+    <testCase name="testing Match Model SQL connect player match get single paused game invalid user id" duration="62"/>
+    <testCase name="testing Match Model SQL rank elo loss" duration="226"/>
+    <testCase name="testing Match Model SQL rank elo gain" duration="153"/>
+    <testCase name="testing Match Model SQL rank invalid type match_id" duration="89"/>
+    <testCase name="testing Match Model SQL rank get elo player" duration="117"/>
+    <testCase name="testing Match Model SQL rank update elo - invalid match" duration="83"/>
+    <testCase name="testing Match Model SQL rank ranked Leaderboard" duration="160"/>
+    <testCase name="testing Match Model SQL Multiplayer Random insert" duration="305"/>
+    <testCase name="testing Match Model SQL Multiplayer Random search game - waiting player" duration="407"/>
+    <testCase name="testing Match Model SQL Multiplayer Random search game - no waiting player" duration="104"/>
+    <testCase name="testing Match Model SQL Multiplayer Random make Random Match Shadow as Deleted - wrong match_shadow" duration="76"/>
+    <testCase name="testing Match Model SQL get user weekly results valid inputs" duration="91"/>
+    <testCase name="testing Match Model SQL get user weekly results invalid user" duration="80"/>
+    <testCase name="testing Match Model SQL get user weekly results invalid day" duration="63"/>
+  </file>
+  <file path="/Users/alessandro/Desktop/progetti/progetto_ingegneria/t6-playf3/test/backend/controllers/SocketController.test.js">
+    <testCase name="Socket controller  handle Player Resign valid socket - freeplay" duration="2"/>
+    <testCase name="Socket controller  handle Player Resign valid socket - match ended" duration="2920"/>
+    <testCase name="Socket controller  handle Player Resign valid socket - match not ended" duration="3932"/>
+    <testCase name="Socket controller  handle Opponent Lose valid socket - freeplay" duration="3"/>
+    <testCase name="Socket controller  handle Opponent Lose valid socket - match ended" duration="2158"/>
+    <testCase name="Socket controller  handle Opponent Lose valid socket - match not ended" duration="2425"/>
+    <testCase name="Socket controller  handle Match Draw valid socket - freeplay" duration="4"/>
+    <testCase name="Socket controller  handle Match Draw valid socket - match not ended" duration="2315"/>
+    <testCase name="Socket controller  handle Player lose valid socket - freeplay" duration="1"/>
+    <testCase name="Socket controller  handle Player lose valid socket - match not ended" duration="3022"/>
+    <testCase name="Socket controller  pause game valid socket - match not ended" duration="1383"/>
+    <testCase name="Socket controller  AI move" duration="9"/>
+    <testCase name="Socket controller  check fen" duration="20"/>
+    <testCase name="Socket controller  random position" duration="26"/>
+    <testCase name="Socket controller  convert move to fen valid moves" duration="1"/>
+    <testCase name="Socket controller  convert move to fen valid moves" duration="0"/>
+  </file>
+  <file path="/Users/alessandro/Desktop/progetti/progetto_ingegneria/t6-playf3/test/backend/drivers/apiDriverNoSess.test.js">
+    <testCase name="API - no session /api/user POST /user should create user" duration="932"/>
+    <testCase name="API - no session /api/user POST /user body undefined" duration="132"/>
+    <testCase name="API - no session /api/user POST /user user undefined" duration="101"/>
+    <testCase name="API - no session /api/user POST /user extreme case - number as user" duration="426"/>
+    <testCase name="API - no session /api/user  POST /login body undefined" duration="187"/>
+    <testCase name="API - no session /api/user  POST /login user undefined" duration="91"/>
+    <testCase name="API - no session /api/user  POST /login right credentials" duration="436"/>
+    <testCase name="API - no session /api/user  POST /login wrong credentials" duration="310"/>
+    <testCase name="API - no session /api/user GET /authenticatedUser session not active" duration="125"/>
+    <testCase name="API - no session /api/user POST /logout not logged" duration="228"/>
+    <testCase name="API - no session /api/user /:id GET valid id" duration="563"/>
+    <testCase name="API - no session /api/user /:id GET invalid id" duration="258"/>
+    <testCase name="API - no session /api/user /:id GET /attempts valid user id" duration="510"/>
+    <testCase name="API - no session /api/user /:id GET /attempts invalid user id" duration="386"/>
+    <testCase name="API - no session /api/user /:id GET /results valid user id" duration="579"/>
+    <testCase name="API - no session /api/user /:id GET /results invalid user id" duration="149"/>
+    <testCase name="API - no session /api/match POST / body Undefined" duration="2"/>
+    <testCase name="API - no session /api/match POST / white - imbalance Nan" duration="168"/>
+    <testCase name="API - no session /api/match POST / white - imbalance 0" duration="431"/>
+    <testCase name="API - no session /api/match POST / black - imbalance 0" duration="425"/>
+    <testCase name="API - no session /api/match POST / black - imbalance nan" duration="527"/>
+    <testCase name="API - no session /api/match GET /daily/config" duration="219"/>
+    <testCase name="API - no session /api/match GET /weekly/config" duration="157"/>
+    <testCase name="API - no session /api/match GET /daily/leaderboard valid day" duration="279"/>
+    <testCase name="API - no session /api/match GET /daily/leaderboard invalid day" duration="323"/>
+    <testCase name="API - no session /api/match GET /weekly/leaderboard valid day" duration="438"/>
+    <testCase name="API - no session /api/match GET /weekly/leaderboard invalid day" duration="274"/>
+    <testCase name="API - no session /api/match GET /ranked/leaderboard" duration="671"/>
+    <testCase name="API - no session /api/match GET /startingPosition/" duration="178"/>
+    <testCase name="API - no session /api/match GET /:id existing match - no moves" duration="279"/>
+    <testCase name="API - no session /api/match GET /:id existing match - moves" duration="968"/>
+    <testCase name="API - no session /api/match GET /:id not existing match" duration="371"/>
+  </file>
+  <file path="/Users/alessandro/Desktop/progetti/progetto_ingegneria/t6-playf3/test/backend/drivers/apiDriverSess.test.js">
+    <testCase name="API - session GET /authenticatedUser" duration="124"/>
+    <testCase name="API - session /api/user GET /ranked/rank not authenticated user" duration="233"/>
+    <testCase name="API - session /api/user GET /ranked/rank authenticated user" duration="267"/>
+    <testCase name="API - session /api/match POST /daily not authenticated user" duration="210"/>
+    <testCase name="API - session /api/match POST /daily authenticated user - no paused game" duration="1490"/>
+    <testCase name="API - session /api/match POST /daily authenticated user - paused game" duration="2288"/>
+    <testCase name="API - session /api/match POST /singleplayer not authenticated user body Undefined" duration="1"/>
+    <testCase name="API - session /api/match POST /singleplayer not authenticated user imbalance Nan" duration="243"/>
+    <testCase name="API - session /api/match POST /singleplayer not authenticated user imbalance not passed" duration="258"/>
+    <testCase name="API - session /api/match POST /singleplayer authenticated user imbalance 0 - white true - NO paused" duration="1231"/>
+    <testCase name="API - session /api/match POST /singleplayer authenticated user imbalance 0 - white true - paused" duration="2080"/>
+    <testCase name="API - session /api/match POST /multiplayer not authenticated user" duration="310"/>
+    <testCase name="API - session /api/match POST /multiplayer authenticated user" duration="726"/>
+    <testCase name="API - session /api/match POST /weekly not authenticated user" duration="292"/>
+    <testCase name="API - session /api/match POST /weekly authenticated user - no paused game" duration="1672"/>
+    <testCase name="API - session /api/match POST /weekly authenticated user- paused game" duration="991"/>
+    <testCase name="API - session /api/match GET /pausedGame/:type not authenticated user" duration="172"/>
+    <testCase name="API - session /api/match GET /pausedGame/:type authenticated user - single type" duration="1602"/>
+    <testCase name="API - session POST /logout" duration="69"/>
+  </file>
+  <file path="/Users/alessandro/Desktop/progetti/progetto_ingegneria/t6-playf3/test/backend/controllers/UserController.test.js">
+    <testCase name="User Controller create user insert user" duration="719"/>
+    <testCase name="User Controller create user already existent user" duration="229"/>
+    <testCase name="User Controller get user by ID valid ID" duration="126"/>
+    <testCase name="User Controller get user by ID invalid ID" duration="62"/>
+    <testCase name="User Controller get user by name valid name" duration="124"/>
+    <testCase name="User Controller get user by name invalid name" duration="52"/>
+    <testCase name="User Controller check User ID valid ID" duration="49"/>
+    <testCase name="User Controller check User ID invalid ID" duration="50"/>
+    <testCase name="User Controller check User ID string as ID" duration="1"/>
+    <testCase name="User Controller check User Name existing name in db" duration="57"/>
+    <testCase name="User Controller check User Name not existing name in db" duration="289"/>
+    <testCase name="User Controller authenticate user right credentials" duration="139"/>
+    <testCase name="User Controller authenticate user wrong username" duration="160"/>
+    <testCase name="User Controller authenticate user wrong password" duration="151"/>
+    <testCase name="User Controller updateRating valid inputs" duration="231"/>
+    <testCase name="User Controller updateRating invalid id" duration="93"/>
+  </file>
+  <file path="/Users/alessandro/Desktop/progetti/progetto_ingegneria/t6-playf3/test/backend/models/UserModel.test.js">
+    <testCase name="UserModel check user name insert User" duration="552"/>
+    <testCase name="UserModel check user name existing name" duration="52"/>
+    <testCase name="UserModel check user name not existing name" duration="41"/>
+    <testCase name="UserModel check user ID valid ID" duration="123"/>
+    <testCase name="UserModel check user ID invalid ID" duration="48"/>
+    <testCase name="UserModel get user info by ID valid ID" duration="77"/>
+    <testCase name="UserModel get user info by ID invalid ID" duration="50"/>
+    <testCase name="UserModel get user info by name valid name" duration="48"/>
+    <testCase name="UserModel get user info by name invalid Name" duration="126"/>
+    <testCase name="UserModel update Rating ELO valid ID" duration="148"/>
+    <testCase name="UserModel update Rating ELO invalid ID" duration="74"/>
+  </file>
+  <file path="/Users/alessandro/Desktop/progetti/progetto_ingegneria/t6-playf3/test/backend/models/Model.test.js">
+    <testCase name="testing Model SQL current Timestamp" duration="0"/>
+    <testCase name="testing Model SQL sample query" duration="262"/>
+  </file>
+  <file path="/Users/alessandro/Desktop/progetti/progetto_ingegneria/t6-playf3/test/backend/controllers/Controller.test.js">
+    <testCase name="controller Test default Output" duration="0"/>
+    <testCase name="controller Test Encrypt Decrypt test" duration="0"/>
+    <testCase name="controller Test Encrypt Decrypt test, empty string" duration="0"/>
+    <testCase name="controller Test get today" duration="0"/>
+    <testCase name="controller Test getUserFromSession" duration="1"/>
+    <testCase name="controller Test get start of week - default day" duration="0"/>
+    <testCase name="controller Test get start of week - day" duration="0"/>
+  </file>
+  <file path="/Users/alessandro/Desktop/progetti/progetto_ingegneria/t6-playf3/test/backend/dto/Dto.test.js">
+    <testCase name="DTO match" duration="0"/>
+    <testCase name="DTO user" duration="0"/>
+  </file>
+</testExecutions>
